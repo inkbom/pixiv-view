@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Pixel</title>
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="function.js"></script>
+	<script type="text/javascript" src="js/pixiv.js"></script>
+	<style type="text/css">
+		@import url(style.css)
+	</style>
+</head>
+<body class="full">
+	<header class="top_menu">
+		<div class="container">
+			<div>
+				<a href="/" class="web_logo">Pixiv-Viewer</a>
+			</div>
+			<nav class="top_menu_con">
+				<div class="top_menu_ul">
+					<ul class="top_menu_nav">
+						<li class="top_menu_item">
+							<a href="pixel.html" class="top_menu_text">首页</a>
+						</li>
+						<li class="top_menu_item">
+							<a href="rank.html" class="top_menu_text">排行榜</a>
+						</li>
+						<li class="top_menu_item">
+							<a href="search.html" class="top_menu_text">热门标签</a>
+						</li>
+						<li class="top_menu_item">
+							<a href="" onclick="test()" id="test" class="top_menu_text">设置</a>
+						</li>
+					</ul>
+				</div>
+				<div class="top_form">
+					<div class="top_seacher">
+						<input type="search" placeholder="搜索..." class="top_seacher_inputer">
+						<i class="seache_icon" onclick="topsearch()">
+							<!-- <img src="icon/seach.png"> -->
+						</i>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<div class="featured">
+		<div class="page_row" id='hot'>
+			<p class="title">热门</p>
+		</div>
+		<script type="text/javascript">inital1()</script>
+		<div class="page_row" id='rand'>
+			<p class="title">最新</p>
+		</div>
+		<script type="text/javascript">inital2()</script>
+	</div>
+
+</body>
+</html>

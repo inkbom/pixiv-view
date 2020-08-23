@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>搜索</title>
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="function.js"></script>
+	<script type="text/javascript" src="js/search.js"></script>
+	<style type="text/css">
+		@import url(style.css)
+	</style>
+</head>
+<body>
+	<header class="top_menu">
+		<div class="container">
+			<div>
+				<a href="/" class="web_logo">Pixiv-Viewer</a>
+			</div>
+			<nav class="top_menu_con">
+				<div class="top_menu_ul">
+					<ul class="top_menu_nav">
+						<li class="top_menu_item">
+							<a href="pixel.html" class="top_menu_text">首页</a>
+						</li>
+						<li class="top_menu_item">
+							<a href="rank.html" class="top_menu_text">排行榜</a>
+						</li>
+						<li class="top_menu_item">
+							<a href="search.html" class="top_menu_text">热门标签</a>
+						</li>
+						<li class="top_menu_item">
+							<a href="#" onclick="test()" id="test" class="top_menu_text">设置</a>
+						</li>
+					</ul>
+				</div>
+				
+			</nav>
+		</div>
+	</header>
+	<div class='mainSearchPanel'>
+		<form class="SearchPanel">
+			<input type="search" name="" placeholder="Search..." class="mainSearchInputer">
+			<i class="search_icon" onclick="updata()"></i>
+		</form> 
+			<div class="search_menu">
+			<ul class="search_menu_ul">
+				<li class="search_menu_title ">匹配机制:</li>
+				<li class="search_menu_tag tag_match" id='text' onclick="switchMatchMode(this)">标题/描述</li>
+				<li class="search_menu_tag tag_match" id="caption" onclick="switchMatchMode(this)">描述</li>
+				<li class="search_menu_tag search_menu_choice tag_match" id="tag" onclick="switchMatchMode(this)">非精确标签</li>
+				<li class="search_menu_tag tag_match" id="exact_tag" onclick="switchMatchMode(this)">精确标签</li>
+			</ul>
+			<ul class="search_menu_ul">
+				<li class="search_menu_title">排序方式:</li>
+				<li class="search_menu_tag search_menu_choice tag_order" id="desc" onclick="switchOrderMode(this)">倒序</li>
+				<li class="search_menu_tag tag_order" id="asc" onclick="switchOrderMode(this)">正序</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="featured">
+	</div>
+	<div class="tags_panel"></div>
+	<div class="totop">
+		<img src="icon/upward.png">
+	</div>
+</body>
+</html>

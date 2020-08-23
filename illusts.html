@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="function.js"></script>
+	<script type="text/javascript" src="js/accept.js"></script>
+	<style type="text/css">
+		@import url(style.css)
+	</style>
+	<title></title>
+</head>
+<body class="full">
+	<header class="top_menu">
+		<div class="container">
+			<div>
+				<a href="/" class="web_logo">Pixiv-Viewer</a>
+			</div>
+			<nav class="top_menu_con">
+				<div class="top_menu_ul">
+					<ul class="top_menu_nav">
+						<li class="top_menu_item">
+							<a href="pixel.html" class="top_menu_text" target="_blank">首页</a>
+						</li>
+						<li class="top_menu_item">
+							<a href="rank.html" class="top_menu_text" target="_blank">排行榜</a>
+						</li>
+						<li class="top_menu_item">
+							<a href="search.html" class="top_menu_text" target="_blank">热门标签</a>
+						</li>
+						<li class="top_menu_item">
+							<a href="" onclick="test()" id="test" class="top_menu_text" target="_blank">设置</a>
+						</li>
+					</ul>
+				</div>
+				<div class="top_form">
+					<div class="top_seacher">
+						<input type="search" placeholder="搜索..." class="top_seacher_inputer" onclick="topsearch()">
+						<i class="seache_icon" topsearch()>
+							<!-- <img src="icon/seach.png"> -->
+						</i>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<div class="content_panel">
+		<div class="content">
+			<div class="row">
+				<aside class="sidebar">
+					<div class="sidecuter" onclick="push(this)" id = 'user_news'>
+						<i id="profileIcon"></i>
+						<p>Profile</p>
+					</div>
+					<div class="side user_news">
+					<!-- 	<div class="user_img_panel">
+							<img src="" class="user_img">
+						</div>
+						<div class="infor" id="user_infor">
+							<a href=""></a>
+							<a href=""></a>
+						</div> -->
+						<dl>
+							<dt>作者</dt>
+							<dd class="userpicPanel">
+								<a href="" class="userpic">
+									<img class="user_img">
+								</a>
+								<a href="" class="username"></a>
+								<p class="userid"></p>
+							</dd>
+							<dt>标题</dt>
+							<dd class="caption"></dd>
+							<dt>id</dt>
+							<dd class="workid"></dd>
+							<dt>尺寸</dt>
+							<dd class="size"></dd>
+							<dt>上传日期</dt>
+							<dd class="uptime"></dd>
+							<dt></dt>
+						</dl>
+					</div>
+					<div class="sidecuter" onclick="push(this)" id = 'tags'>
+						<i id="profileIcon"></i>
+						<p>Tags</p>
+					</div>
+					<ul class="side tags">
+					</ul>
+					<div class="sidecuter" onclick="push(this)" id = 'resolution'>
+						<i id="profileIcon"></i>
+						<p>分辨率</p>
+					</div>
+					<ul class="side resolution">
+						<li class="res_tag" onclick="switchRes(this)" id="PD" url>
+							<a>普通</a>
+						</li>
+						<li class="res_tag" onclick="switchRes(this)" id='LD' data-url>
+							<a>清晰</a>
+						</li>
+						<li class="res_tag" onclick="switchRes(this)" id='HD' data-url>
+							<a>高清</a>
+						</li>
+						<li class="res_tag" onclick="switchRes(this)" id='OD' data-url>
+							<a>原图</a>
+						</li>
+					</ul>
+				</aside>
+				<div class="picture_Panel">
+					<img class="main_img">
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

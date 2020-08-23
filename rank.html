@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>排行榜</title>
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="function.js"></script>
+	<script type="text/javascript" src="js/rank.js"></script>
+	<style type="text/css">
+		@import url(style.css)
+	</style>
+</head>
+<body class="full">
+	<header class="top_menu">
+		<div class="container">
+			<div>
+				<a href="/" class="web_logo">Pixiv-Viewer</a>
+			</div>
+			<nav class="top_menu_con">
+				<div class="top_menu_ul">
+					<ul class="top_menu_nav">
+						<li class="top_menu_item">
+							<a href="pixel.html" class="top_menu_text">首页</a>
+						</li>
+						<li class="top_menu_item">
+							<a href="rank.html" class="top_menu_text">排行榜</a>
+						</li>
+						<li class="top_menu_item">
+							<a href="search.html" class="top_menu_text">热门标签</a>
+						</li>
+						<li class="top_menu_item">
+							<a href="#" onclick="test()" id="test" class="top_menu_text">设置</a>
+						</li>
+					</ul>
+				</div>
+				<div class="top_form">
+					<div class="top_seacher">
+						<input type="search" placeholder="搜索..." class="top_seacher_inputer">
+						<i class="seache_icon" onclick="topsearch()">
+							<!-- <img src="icon/seach.png"> -->
+						</i>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+		<div class="menu_rank top_menu_con">
+			<div class="top_menu_ul">
+					<ul class="top_menu_nav">
+						<li class="top_menu_item top_menu_choice"  onclick="switchRank(this)" id="day">
+							<a href="#" class="top_menu_text">日榜</a>
+						</li>
+						<li class="top_menu_item"  onclick="switchRank(this)" id="week">
+							<a href="#" class="top_menu_text">周榜</a>
+						</li>
+						<li class="top_menu_item"  onclick="switchRank(this)" id="month">
+							<a href="#" class="top_menu_text">月榜</a>
+						</li>
+						<li class="top_menu_item"  onclick="switchRank(this)" id="week_rookie">
+							<a href="#" class="top_menu_text">新人</a>
+						</li>
+						<li class="top_menu_item"  onclick="switchRank(this)" id="week_original">
+							<a href="#" class="top_menu_text">原创</a>
+						</li>
+						<li class="top_menu_item"  onclick="switchRank(this)" id="day_male">
+							<a href="#" class="top_menu_text">男性向</a>
+						</li>
+						<li class="top_menu_item" onclick="switchRank(this)" id="day_female">
+							<a href="#" class="top_menu_text">女性向</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+	<div class="featured">
+	</div>
+	<div class="totop">
+		<img src="icon/upward.png">
+	</div>
+</body>
+</html>
